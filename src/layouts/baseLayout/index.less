@@ -1,0 +1,51 @@
+/***系统主体部分***/
+.container {
+  min-height: 100vh;
+
+  /***系统头部***/
+  .contentHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    background: #fff;
+    .collapse {
+      color: #333;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+
+  /***系统菜单***/
+  .menuContent {
+    color: #fff;
+    .logoBox {
+      text-align: center;
+      height: 64px;
+      line-height: 64px;
+      font-size: 22px;
+      box-shadow: 0 1px 9px -3px rgba(0, 0, 0, 0.2);
+    }
+    .menu {
+      margin-top: 20px;
+    }
+  }
+
+  /***系统内容区域***/
+  .content {
+    flex: auto;
+    display: flex;
+    margin: 16px 24px;
+    padding: 24px;
+    background: #fff;
+    min-height: 280px;
+    & > div {
+      width: 100%;
+    }
+  }
+  .footerContent {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 24px;
+    text-align: center;
+  }
+}
